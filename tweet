@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+tweet   =   ARGV.join(" ")
+
+system("twurl -d \"status=#{tweet}\" /1.1/statuses/update.json")
+
